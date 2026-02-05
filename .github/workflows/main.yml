@@ -6,6 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build with Buildozer
-        uses: ArtemGrinev/buildozer-action@v1
+        uses: ArtemSerebrennkov/buildozer-action@v1
         with:
-          buildozer_version: master
+          command: buildozer android debug
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-app-bundle
+          path: bin/*.apk
