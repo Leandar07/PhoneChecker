@@ -9,4 +9,3 @@ jobs:
         uses: ArtemGrinev/buildozer-action@v1
         with:
           buildozer_version: master
-
