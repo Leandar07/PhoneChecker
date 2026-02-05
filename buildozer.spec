@@ -1,11 +1,12 @@
 [app]
 title = Phone Checker
 package.name = phonechecker
-package.domain = org.test
+package.domain = org.leandar
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
 requirements = python3,kivy
 orientation = portrait
 android.archs = arm64-v8a
+android.allow_backup = True
 p4a.branch = master
