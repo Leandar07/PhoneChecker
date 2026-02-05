@@ -5,7 +5,7 @@ from kivy.uix.button import Button
 
 class PhoneChecker(App):
     def build(self):
-        self.layout = BoxLayout(orientation='vertical', padding=30, spacing=20)
+        self.layout = BoxLayout(orientation='vertical', padding=10, spacing=20)
         self.lbl = Label(text="Phone Diagnostic Tool", font_size='25sp')
         self.btn = Button(text="စစ်ဆေးမည်", size_hint=(1, 0.3), background_color=(0, 1, 0, 1))
         self.btn.bind(on_press=self.check)
